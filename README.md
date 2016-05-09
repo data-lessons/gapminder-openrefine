@@ -1,6 +1,8 @@
 # openrefine-gapminder
 Lesson on OpenRefine using the Gapminder dataset
 
+This is based on the Data Carpentry Ecology OpenRefine lesson
+
 ### Data set notes.
 - Data used in this lesson is [gapminder-messy-openrefine.csv](gapminder-messy-openrefine.csv)
 * This data set is derived from [the Gapminder project] (http://gapminder.org/) data. 
