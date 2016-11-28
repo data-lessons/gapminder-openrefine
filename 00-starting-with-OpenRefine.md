@@ -84,25 +84,43 @@ _Once Refine is open, you'll be asked if you want to Create, Open, or Import a P
 * After corrections are made in this window, you can either Merge and Close the Cluster pop-up, or Merge and Re-cluster.
 
 
-## Split / Leading - Trailing Whitespace / Undo - Redo
-
-* If data in a column needs to be split into multiple columns, and the strings in the cells are separated by a common separator (say a comma, or a space), you can use that separator to divide up the bits into their own columns.
-* Go to the drop-down tab at the top of the column that you need to split into multiple columns
-* For example, go to the scientificName column > from drop-down choose Edit Column > Split into several columns
-* In the pop-up, for separator, remove the comma, put in a space
-* Remove the check in the box that says "remove column after splitting"
-* You'll get two extra columns called, in this case: scientificName 1, scientificName 2
-* This will reveal an error in a few names that have spaces at the beginning (so-called leading white space).
- - These can be easily removed with another Refine feature in the column drop-down choices. See drop-down: Edit cells > Common transforms > Remove leading and trailing whitespace
-* To Undo create columns, look just above the scientificName cluster in the left side of the screen. Click where it says Undo / Redo. Click back one step (all steps, all changes are saved here). Just go back to the previous step and click. The extra columns will be gone.
-
-
-
 ## Scripts
 
 * Refine saves every change, every edit you make to the dataset in a file you can save on your machine.
 * If you had 20 files to clean, and they all had the same type of errors, and all files had the same columns, you could save the script, open a new file to clean, paste in the script and run it. Voila, clean data.
 * In the Undo / Redo section, click Extract, save the bits desired using the check boxes. Save the code in a .txt file. To run these steps on a new dataset, import the new dataset into Refine, open the Extract / Apply section, paste in the .txt file, click Apply.
+
+
+## Numeric faceting
+
+You can also use numeric faceting to look at the data. 
+
+- Go to the 'pop' column. Select 'facet -> numeric facet'
+- On the left comes up a graph looking figure
+- Mousing over the edges of the plots, over those handles, an arrow will appear
+- You can move those arrows in or out to focus on particular numeric ranges
+
+- You can do the same for gdpPerCap
+
+This is useful if you want to zoom in on some range of the data, or to check the low and high values to make sure they're meeting expectations.
+
+**Questions**
+- What countries have the high populations?
+- If you move the bars for both 'pop' and 'gdpPerCap' what happens?
+
+
+## Split / Leading - Trailing Whitespace / Undo - Redo
+
+* If data in a column needs to be split into multiple columns, and the strings in the cells are separated by a common separator (say a comma, or a space), you can use that separator to divide up the bits into their own columns.
+* Go to the drop-down tab at the top of the column that you need to split into multiple columns
+* For example, go to the continent column > from drop-down choose Edit Column > Split into several columns
+* In the pop-up, for separator, remove the comma, put in a space
+* Remove the check in the box that says "remove column after splitting"
+* You'll get two extra columns called, in this case: continent 1, continent 2
+* This will reveal an error in a few names that have spaces at the beginning (so-called leading white space).
+ - These can be easily removed with another Refine feature in the column drop-down choices. See drop-down: Edit cells > Common transforms > Remove leading and trailing whitespace
+* To Undo create columns, look just above the continent cluster in the left side of the screen. Click where it says Undo / Redo. Click back one step (all steps, all changes are saved here). Just go back to the previous step and click. The extra columns will be gone.
+
 
 ## Export
 
